@@ -400,7 +400,7 @@ background-clip: padding-box;
    -webkit-border-radius:4px;
 }
 
-?#header{z-index:1001 !important;}
+#header{z-index:1001 !important;}
 #content{z-index:100 !important;}
 
 
