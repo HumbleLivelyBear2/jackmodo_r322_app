@@ -5,7 +5,7 @@ set -e
 
 # Feel free to change any of the following variables for your app:
 TIMEOUT=${TIMEOUT-60}
-APP_ROOT=/home/apps/apps/jackmodo_r322_app/current
+APP_ROOT=/home/apps2/apps/jackmodo_r322_app/current
 PID=$APP_ROOT/tmp/pids/unicorn.pid
 CMD="$APP_ROOT/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
 action="$1"
