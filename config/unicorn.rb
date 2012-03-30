@@ -1,4 +1,4 @@
-root = "/home/apps2/apps/jackmodo_r322_app/current"
+root = "/home/deployer2/apps/jackmodo/current"
 
 working_directory "/vagrant"
 pid "#{root}/tmp/pids/unicorn.pid"
