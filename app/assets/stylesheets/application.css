@@ -362,7 +362,7 @@ border-radius: 4px;
 -webkit-box-shadow: 0px 0px 6px #000000;
 box-shadow: 0px 0px 6px #000000;
 /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#6e6e6e', endColorstr = '#000000');
+filter: progid; DXImageTransform.Microsoft.gradient(startColorstr = '#6e6e6e', endColorstr = '#000000');
 /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
 /*Element must have a height (not auto)*/
 /*All filters must be placed together*/
