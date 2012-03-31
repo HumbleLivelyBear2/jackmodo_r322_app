@@ -73,7 +73,7 @@
         host: localhost
         username: root
         encoding: utf8
-        password:
+        password: secret
         database: jack
 
       test: 
@@ -81,7 +81,7 @@
         host: localhost
         username: root
         encoding: utf8
-        password:
+        password: secret
         database: jack
 
       production: 
@@ -90,5 +90,5 @@
         encoding: utf8
         database: jack
         username: root
-        password: 
+        password: secret
       
