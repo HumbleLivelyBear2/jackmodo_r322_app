@@ -1,21 +1,23 @@
 require 'bundler/capistrano'
 # require 'hoptoad_notifier/capistrano'
 
-set :application, "your-project-name"
+set :application, "jackmodo"
+set :rails_env, "production"
 
 set :branch, "master"
 set :repository,  "git@github.com:HumbleLivelyBear2/jackmodo_r322_app.git"
 set :scm, "git"
-set :user, "root" # 一個伺服器上的帳戶用來放你的應用程式，不需要有sudo權限，但是需要有權限可以讀取Git repository拿到原始碼
+set :user, "apps" # 一個伺服器上的帳戶用來放你的應用程式，不需要有sudo權限，但是需要有權限可以讀取Git repository拿到原始碼
 set :port, "22"
 
-set :deploy_to, "/home/rails"
+set :deploy_to, "/home/apps/jackmodo"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
-role :web, "106.187.42.93"
-role :app, "106.187.42.93"
-role :db,  "106.187.42.93", :primary => true
+role :web, "106.187.51.230"
+role :app, "106.187.51.230"
+role :db,  "106.187.51.230", :primary => true
+
 
 namespace :deploy do
 
