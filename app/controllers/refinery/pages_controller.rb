@@ -8,6 +8,8 @@ module Refinery
     # This action is usually accessed with the root path, normally '/'
     def home
       
+      Rails.logger.info"xxxxxxxxxxxxxxxxxxx I'm at home xxxxxxxxxxx "
+      
        if !Refinery::Projects::Project.all.empty?
         @projects = Refinery::Projects::Project.all
        end
@@ -27,6 +29,7 @@ module Refinery
     #
     def show
       if current_user_can_view_page?
+        Rails.logger.info"xxxxxxxxxxxxxxxxxxx I'm at show xxxxxxxxxxx "
         if should_skip_to_first_child?
           redirect_to refinery.url_for(first_live_child.url)
         elsif page.link_url.present?

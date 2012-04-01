@@ -22,4 +22,11 @@ class StaticpagesController < ApplicationController
 
   def howbuy
   end
+  
+  def home
+    if !Refinery::Projects::Project.all.empty?
+      @projects = Refinery::Projects::Project.all
+    end
+  end
+  
 end
