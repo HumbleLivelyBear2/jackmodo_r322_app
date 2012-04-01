@@ -9,6 +9,9 @@ JackmodoR322App::Application.routes.draw do
   match 'howlaunch' => 'staticpages#howlaunch', :as => :howlaunch
   match 'howbuy' => 'staticpages#howbuy', :as => :howbuy
   
+  match 'staticpages/create_lauch_data'
+  match 'staticpages/creat_contact_data'
+  match 'staticpages/redirect_to_paypal'
   
   match 'projects/:id/support' => 'refinery/projects/projects#support', :as => :project_support
   

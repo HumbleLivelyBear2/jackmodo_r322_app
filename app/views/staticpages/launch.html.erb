@@ -11,18 +11,19 @@
  </td>
   </tr>
   <tr>
-    <td class="contact" align="center" valign="top"><form id="contact" action="#" method="post">
-			<label for="name">你的創意作品是...(請簡單敘述您的創意作品，包括作品的特色與用法，同時也說明這作品預計的開始和結束時間)</label>
-				<textarea cols="20" rows="7" id="commentinput" name="comment"></textarea>
-			<label for="email">關於你與你的創意作品：(請給我們關於您的相關資料，部落格、網誌、臉書等等...,以及您與您創意作品故事)</label>
-
-				<textarea cols="20" rows="7" id="commentinput" name="comment"></textarea>
-			<label for="comment">你如何知道我們：</label>
-				<input id="nameinput" name="name" type="text"><label for="comment">你創意作品的目標資金額：</label>
-				<input id="nameinput" name="name" type="text"><br>
-			<input id="submitinput" name="提交計畫" class="submit" value="提交計畫" type="submit">
-			
-			</form></td>
+    <td class="contact" align="center" valign="top">
+		<form id="contact" action="/staticpages/create_lauch_data" method="post">
+		<label for="name">你的創意作品是...(請簡單敘述您的創意作品，包括作品的特色與用法，同時也說明這作品預計的開始和結束時間)</label>
+			<textarea cols="20" rows="7" id="commentinput" name="comment1"></textarea>
+		<label for="email">關於你與你的創意作品：(請給我們關於您的相關資料，部落格、網誌、臉書等等...,以及您與您創意作品故事)</label>
+			<textarea cols="20" rows="7" id="commentinput" name="comment2"></textarea>
+		<label for="comment">你如何知道我們：</label>
+			<input id="name1" name="howkonw" type="text">
+		<label for="comment">你創意作品的目標資金額：</label>
+			<input id="name2" name="money" type="text"><br>
+		<input id="submitinput" name="submit" class="submit" value="提交計畫" type="submit">
+		</form>
+	</td>
   </tr>
 </table>
 
